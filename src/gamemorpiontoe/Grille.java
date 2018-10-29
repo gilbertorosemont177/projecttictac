@@ -102,7 +102,7 @@ public class Grille extends JFrame implements ActionListener{
                 
 
     			tab[cellule].setText("O");		
-    											 // réfléter le choix de O
+    											
     			if(unJeu.gagnant("O",tabGagne)){
     				fini = true;
                                 

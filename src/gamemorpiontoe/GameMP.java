@@ -1,15 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package gamemorpiontoe;
 
 import java.util.List;
 import java.util.ArrayList;
 
 public class GameMP implements InterfaceGame{
-int[] tabIndexGagnantes= new int [3]; // X in tab 
+int[] tabIndexGagnantes= new int [3];
 String grilleJeu[]=new String[9];
 int best_index_for_O;
 final  int [][] combinaisongagnante= new int[] []{ {0, 4, 8},{0, 1, 2},
@@ -51,8 +46,7 @@ final  int [][] combinaisongagnante= new int[] []{ {0, 4, 8},{0, 1, 2},
     if(this.Casesdisponibles().isEmpty())
         return 0;  
     
-     
-    for (int i = 0; i < this.Casesdisponibles().size(); i++) {
+   for (int i = 0; i < this.Casesdisponibles().size(); i++) {
 
        int  indexdisponible= this.Casesdisponibles().get(i);
        if("O".equals(JoueurVsMachine)){
